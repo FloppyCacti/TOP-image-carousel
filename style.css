@@ -7,6 +7,11 @@
     flex-direction: row;
 }
 
-#images > img{
+#images img{
     height: 800px;
+    display: none;
+}
+
+#images img.visible{
+    display: block;
 }
