@@ -21,3 +21,10 @@
     justify-content: center;
     align-items: center;
 }
+
+#dot-nav button {
+    background-color: white;
+}
+#dot-nav button.active {
+    background-color: black;
+}
