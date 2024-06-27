@@ -10,6 +10,18 @@ function image_carousel(){
 
     images[currentIndex].classList.add('visible');
 
+    document.querySelector('#previous-image').addEventListener('click', () => {
+        images[currentIndex].classList.remove('visible');
+        currentIndex = (currentIndex - 1) % images.length;
+        images[currentIndex].classList.add('visible');
+    });
+    document.querySelector('#next-image').addEventListener('click', () => {
+        images[currentIndex].classList.remove('visible');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('visible');
+
+    });
+
     setInterval(showImage, 3000);
 }
 

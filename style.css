@@ -15,3 +15,9 @@
 #images img.visible{
     display: block;
 }
+
+#image-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
